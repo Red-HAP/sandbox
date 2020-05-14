@@ -22,6 +22,10 @@ The credentials for the database **must** be for a **superuser** role.
 
 The `<password>` part can be omitted if you set the environment variable `PGPASSWORD` with the correct password.
 
+The demo will create a schema called `__demo` where all database objects will be placed. The demo will also create a user named `__monitor`. By default, these objects and the role will be dropped when the demo is complete. If you wish to inspect the objects after the demo runs, use the `--no-teardown` option on the command line.
+
+See `pg_ext_demo.py --help` for more.
+
 # Notes
 
 This is a guided tour through these extensions. The user interaction will be in the form of pressing enter to proceed or scrolling backward in the buffer if information scrolls off-screen.
